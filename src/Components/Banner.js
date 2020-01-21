@@ -43,7 +43,7 @@ export class Banner extends Component {
             <div className="carousel">
                 <Arrow 
                 direction="left"
-                clickFunction={ this.previousSlide }
+                onClick={ this.previousSlide }
                 glyph="&#9664;" />
                 <ImageSlider url={ ImgUrls[this.state.currentImageIndex] } />
                 <Arrow 
@@ -60,7 +60,7 @@ const ImageSlider = ({ url }) => {
         backgroundImage: `url(${url})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
-    };
+    }
     return (
         <div className="image-slider" style={styles}></div>
     )
