@@ -45,24 +45,24 @@ export class Banner extends Component {
                 direction="left"
                 clickFunction={ this.previousSlide }
                 glyph="&#9664;" />
-                <ImageSlider url={ ImgUrls[this.state.currentImageIndex] } />
+                <ImageSlide url={ ImgUrls[this.state.currentImageIndex] } />
                 <Arrow 
                 direction="right"
                 clickFunction={ this.nextSlide }
                 glyph="&#9654;" />
             </div>
-        )
+        );
     }
 }
 
-const ImageSlider = ({ url }) => {
+const ImageSlide = ({ url }) => {
     const styles = {
         backgroundImage: `url(${url})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
     return (
-        <div className="image-slider" style={styles}></div>
+        <div className="image-slide" style={styles}></div>
     )
 }
 

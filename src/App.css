@@ -39,20 +39,27 @@
   /* banner styling */
   html, body, #container, .carousel {
     height:100%;
-    margin:0;
+    margin: 0;
     width: 100%;
   }
-
+  
   .image-slide {
     height: 100%;
     width: 100%;
     transition: background-image .3s ease-in-out;
   }
-
-  .slide-arrow .right {
-    right: 2em;
+  
+  .slide-arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    position:absolute;
+    top: 50%;
   }
-
-  .slide-arrow .left {
-    left: 2rem;
+  
+  .slide-arrow.right {
+    right: 1rem;
+  }
+  
+  .slide-arrow.left {
+    left: 1rem;
   }

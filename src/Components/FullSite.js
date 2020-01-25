@@ -5,7 +5,7 @@ import { Banner } from './Banner';
 export class FullSite extends Component {
     render() {
         return (
-            <div>
+            <div id="container">
                 <Navigation />
                 <br/>
                 <br/>
