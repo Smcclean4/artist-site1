@@ -60,7 +60,7 @@ const ImageSlide = ({ url }) => {
         backgroundImage: `url(${url})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
-    }
+    };
     return (
         <div className="image-slide" style={styles}></div>
     )
